@@ -1,0 +1,19 @@
+{
+    "home": {
+      "description": "A historical city in Uzbekistan.",
+      "aboutMore": "About More"
+    },
+    "about": {
+      "location": "Unknown location",
+      "cost": "Unknown cost",
+      "popularPlaces": "Popular Places",
+      "viewMap": "View Map"
+    },
+    "contacts": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "sendMessage": "Send Message"
+    }
+  }
+  

@@ -1,0 +1,64 @@
+/* .language-switcher {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .language-switcher button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .language-switcher button:hover {
+    background-color: #e0e0e0;
+  }
+   */
+
+   /* .language-switcher {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    gap: 8px; /* Adds spacing between buttons */
+  
+
+
+    .language-switcher {
+        display: flex;
+        justify-content: center;
+        margin: 5px 0;
+      }
+      
+      .language-switcher button {
+        background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Colorful gradient background */
+        border: none;
+        padding: 10px 20px; /* Ample padding for a modern button size */
+        margin: 0 8px;
+        cursor: pointer;
+        border-radius: 25px; /* More rounded corners for a modern look */
+        font-size: 16px; /* Larger font size */
+        font-weight: bold; /* Bold text for emphasis */
+        color: #ffffff; /* White text for high contrast */
+        transition: all 0.3s ease; /* Smooth transition for interactive effects */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+      }
+      
+      .language-switcher button:hover {
+        background: linear-gradient(135deg, #feb47b, #ff7e5f); /* Reverse gradient on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly larger shadow on hover */
+        transform: scale(1.05); /* Slightly scale up on hover */
+      }
+      
+      .language-switcher button:focus {
+        outline: none; /* Remove default focus outline */
+        box-shadow: 0 0 0 3px rgba(0, 150, 136, 0.5); /* Teal outline for focus */
+      }
+      
+      .language-switcher button.active {
+        background: linear-gradient(135deg, #ff6f61, #d4a5a5); /* Active button gradient */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Larger shadow for active state */
+        transform: scale(1.1); /* Slightly larger active button */
+      }
+      

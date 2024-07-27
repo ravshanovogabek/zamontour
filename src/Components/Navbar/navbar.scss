@@ -1,0 +1,63 @@
+@import '../styles/variables'; // Assuming you have a variables.scss file for shared variables
+
+.navBarSection {
+  .header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white-colorDeam);
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+
+    .logoDiv {
+      .logo {
+        color: var(--black-color);
+      }
+    }
+
+    .navBar {
+      .navLists {
+        display: flex;
+        align-items: center;
+        .navItem {
+          margin: 0 1rem;
+          .navLink {
+            color: var(--text-color);
+          }
+        }
+      }
+
+      .btn {
+        margin-left: 1rem;
+      }
+    }
+
+    .toggleNavbar {
+      display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .navBar {
+        display: none;
+        position: absolute;
+        background: var(--white-colorDeam);
+        width: 80%;
+        border-radius: 1rem;
+        height: max-content;
+        top: 6rem;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 2000;
+        box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+        transition: 0.3s ease-in-out;
+      }
+
+      .toggleNavbar {
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+}

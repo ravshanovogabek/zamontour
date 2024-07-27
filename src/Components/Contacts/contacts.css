@@ -1,0 +1,129 @@
+:root {
+    --highlight-color: #ff6347;
+    --body-color: #f5f5f5;
+    --secondary-color: #333;
+    --text-color: #666;
+    --white-color: #fff;
+    --gradient-color: #ff4500;
+    --telegram-color: #0088cc;
+    --instagram-color: #e4405f;
+    --facebook-color: #3b5998;
+    --btn-hover-color: #ff6347;
+}
+
+.contacts-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.contacts-title {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.highlight-letter {
+    color: var(--highlight-color);
+}
+  
+.contacts-description {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+  
+.contacts-form {
+    background: var(--white-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 50px;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8rem;
+    color: var(--white-color);
+    background-color: var(--gradient-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-color);
+    transform: translateY(-2px);
+}
+
+.social-media {
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icon {
+    font-size: 2rem;
+    transition: color 0.3s, transform 0.3s;
+    
+    
+}
+
+.social-icon.telegram {
+    color: var(--telegram-color);
+}
+
+.social-icon.instagram {
+    color: var(--instagram-color);
+}
+
+.social-icon.facebook {
+    color: var(--facebook-color);
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}

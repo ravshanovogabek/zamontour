@@ -1,0 +1,18 @@
+.shop-section {
+    padding: 4rem 0;
+    background: var(--body-color);
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.shop-title {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+.shop-description {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+}

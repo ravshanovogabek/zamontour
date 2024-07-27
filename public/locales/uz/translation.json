@@ -1,0 +1,19 @@
+{
+    "home": {
+      "description": "O'zbekiston tarixiy shahri.",
+      "aboutMore": "Ko'proq ma'lumot"
+    },
+    "about": {
+      "location": "Noma'lum joy",
+      "cost": "Noma'lum xarajat",
+      "popularPlaces": "Mashhur joylar",
+      "viewMap": "Xarita"
+    },
+    "contacts": {
+      "name": "Ism",
+      "email": "Elektron pochta",
+      "message": "Xabar",
+      "sendMessage": "Xabar yuborish"
+    }
+  }
+  

@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --background-color: #f5f5f5;
+    --white-color: #fff;
+    --black-color: #333;
+    --grey-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .navBarSection {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--white-color);
+    z-index: 1000;
+    box-shadow: 0 2px 4px var(--grey-color);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navBar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navLists {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navItem {
+    margin: 0 15px;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navLink:hover {
+    color: var(--primary-color);
+  }
+  
+  .btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .toggleNavbar,
+  .closeNavbar {
+    display: none;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    margin-right: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .navBar {
+      display: none;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--white-color);
+      height: auto;
+      width: 80%;
+      border-radius: 10px;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 2px 4px var(--grey-color);
+      transition: all 0.3s ease-in-out;
+      padding: 20px 0;
+    }
+  
+    .navLists {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+    }
+  
+    .navItem {
+      margin: 10px 0;
+    }
+  
+    .navLink {
+      padding: 10px 20px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .toggleNavbar,
+    .closeNavbar {
+      display: block;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  
+    .navBar.open {
+      display: flex;
+    }
+  }
+
+  .language-switcher {
+    margin-left: auto;
+     /* Pushes the language switcher to the end of the navbar */
+  }
+  

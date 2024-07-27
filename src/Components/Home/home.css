@@ -1,0 +1,164 @@
+/* Keyframe animations for city card transitions */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInTop {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInBottom {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Style for the home section */
+.home-section {
+    padding: 2rem 0;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background blur effect */
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+    z-index: -1; /* Ensure it's behind other content */
+}
+
+/* Container for city cards */
+.city-card-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    scroll-behavior: smooth;
+    padding: 0 2rem; /* Adjust padding as needed */
+}
+
+/* Style for each city card */
+.city-card {
+    width: 300px;
+    height: 400px; /* Fixed height for taller images */
+    max-width: 300px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: var(--current-animation) 2s ease-in-out; /* Apply animation */
+    flex: 0 0 auto; /* Prevent card from shrinking */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the city image */
+.city-image {
+    width: 100%;
+    height: 60%; /* Adjust height to make it taller */
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* Style for the information overlay on city card */
+.city-info {
+    position: relative;
+    height: 40%; /* Adjust to fit the remaining space */
+    color: var(--white-color);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+/* Style for the city name */
+.city-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Style for the city description */
+.city-description {
+    font-size: 1rem;
+}
+
+/* Style for navigation buttons */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    padding: 0.5rem 0.5rem;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+/* Style for navigation buttons on hover */
+.nav-button:hover {
+    background: var(--gradient-color);
+    color: var(--white-color);
+    opacity: 1;
+}
+
+/* Specific styles for left and right navigation buttons */
+.nav-button.left {
+    left: 5rem;
+}
+
+.nav-button.right {
+    right: 5rem;
+}
+
+/* Style for the "About More" button */
+.about-more-button {
+    background: turquoise;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    margin-top: 1rem;
+}
+
+/* Style for "About More" button on hover */
+.about-more-button:hover {
+    background: var(--gradient-color);
+    color: var(--white-color);
+    opacity: 1;
+}
+

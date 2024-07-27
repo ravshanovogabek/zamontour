@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
-import './navbar.css';
+ import './navbar.css';
 import { FaSailboat } from "react-icons/fa6";
 import { IoMdCloseCircle } from "react-icons/io";
 import { TbGridDots } from "react-icons/tb";
@@ -28,19 +27,19 @@ const Navbar = () => {
         <div className={`navBar ${isNavOpen ? 'open' : ''}`}>
           <ul className="navLists flex">
           <li className="navItem">
-              <Link to="main" smooth={true} className="navLink" onClick={toggleNav}>HOME</Link>
+              <a href="#main" smooth={true} className="navLink" onClick={toggleNav}>HOME</a>
             </li>
             <li className="navItem">
-              <Link to="home" smooth={true} className="navLink" onClick={toggleNav}>Cities</Link>
+              <a href="#home" smooth={true} className="navLink" onClick={toggleNav}>Cities</a>
             </li>
             <li className="navItem">
-              <Link to="about" smooth={true} className="navLink" onClick={toggleNav}>About</Link>
+              <a href="#about" smooth={true} className="navLink" onClick={toggleNav}>About</a>
             </li>
             {/* <li className="navItem">
               <Link to="main" smooth={true} className="navLink" onClick={toggleNav}>Shop</Link>
             </li> */}
             <li className="navItem">
-              <Link to="contacts" smooth={true} className="navLink" onClick={toggleNav}>Contacts</Link>
+              <a href="#contacts" smooth={true} className="navLink" onClick={toggleNav}>Contacts</a>
             </li>
             {/* <li className="navItem">
               <Link to="shop" smooth={true} className="navLink" onClick={toggleNav}>Shop</Link>
